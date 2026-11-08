@@ -309,3 +309,20 @@ dd {
      }
     
 }
+
+main.tip {
+  grid-template-columns: 1fr;
+}
+
+.conseils {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.conseils h3 {
+  color: var(--primary-hover);
+  font-size: 1rem;
+  margin: 16px 0 4px;
+}
