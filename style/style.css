@@ -211,6 +211,79 @@ select {
   gap: 1px;
   flex: 1 1 200px;        
 }
+/* ===== Page Inscription ===== */
+.grille-formulaire {
+  display: grid;
+  grid-template-columns: 1fr;   /* mobile : une seule colonne */
+  gap: 16px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titre-champ {
+  font-weight: bold;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+.radios label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+textarea {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.grille-formulaire button {
+  justify-self: start;
+}
+
+
+
+dt {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  padding-left: 8px;
+  margin-top: 1px;
+}
+
+dd {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+.horaires th,
+.horaires td {
+  border: 1px solid var(--border-table);
+  padding: 8px;
+  text-align: center;
+}
+
+.horaires tr:first-child th {
+  background: var(--dark-header);
+  color: var(--text-light);
+}
+
+.horaires .saison {
+  background: var(--dark-sub-header);
+  color: var(--text-light);
+}
 
       
 
@@ -226,5 +299,13 @@ select {
     main{
         grid-template-columns: 2fr 1fr;
     }
+      .grille-formulaire {
+    grid-template-columns: repeat(3, 1fr);   
+    }
+
+    .champ-large,
+    .grille-formulaire button {
+      grid-column: 1 / -1;                     
+     }
     
 }

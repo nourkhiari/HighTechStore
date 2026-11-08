@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>inscreption</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">HTS</span>
+            <span class="logo-text">HighTechStore</span>
+        </div>
+        <nav>
+            <a href="index.html"  >Accueil</a>
+            <a href="pc.html">PC</a>
+            <a href="inscription.html"class="b" >inscription</a>
+            <a href="infos.html ">infos</a>
+        </nav>
+    </header>
+    <main>
+    <section class="formulaire-inscription">
+        <h2>Formulaire d'Inscription</h2>
+
+        <form class="grille-formulaire">
+            <div class="champ">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" >
+            </div>
+
+            <div class="champ">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" >
+            </div>
+
+            <div class="champ">
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" id="naissance" name="naissance">
+            </div>
+
+            <div class="champ">
+                <span class="titre-champ">Sexe :</span>
+                <div class="radios">
+                    <label><input  name="sexe" value="masculin" > Masculin</label>
+                    <label><input  name="sexe" value="feminin"> Féminin</label>
+                </div>
+            </div>
+
+            <div class="champ">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" >
+            </div>
+
+            <div class="champ">
+                <label for="cp">Code postal :</label>
+                <input type="text" id="cp" name="cp">
+            </div>
+
+            <div class="champ">
+                <label for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville" >
+            </div>
+
+            <div class="champ">
+                <label for="gouvernorat">Gouvernorat :</label>
+                <select  name="gouvernorat" required>
+                    <option value="">-- Choisir un gouvernorat --</option>
+                    <option>Ariana</option>
+                    <option>Béja</option>
+                    <option>Ben Arous</option>
+                    <option>Bizerte</option>
+                    <option>Gabès</option>
+                    <option>Gafsa</option>
+                    <option>Jendouba</option>
+                    <option>Kairouan</option>
+                    <option>Kasserine</option>
+                    <option>Kébili</option>
+                    <option>Le Kef</option>
+                    <option>Mahdia</option>
+                    <option>La Manouba</option>
+                    <option>Médenine</option>
+                    <option>Monastir</option>
+                    <option>Nabeul</option>
+                    <option>Sfax</option>
+                    <option>Sidi Bouzid</option>
+                    <option>Siliana</option>
+                    <option>Sousse</option>
+                    <option>Tataouine</option>
+                    <option>Tozeur</option>
+                    <option>Tunis</option>
+                    <option>Zaghouan</option>
+                </select>
+            </div>
+
+            <div class="champ">
+                <label for="fonction">Fonction :</label>
+                <input type="text" id="fonction" name="fonction">
+            </div>
+
+            <div class="champ">
+                <label for="email">Adresse E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="nom@exemple.com" >
+            </div>
+
+            <div class="champ">
+                <label for="tel">Numéro de téléphone :</label>
+                <input type="tel" id="tel" name="tel" >
+            </div>
+
+            <div class="champ champ-large">
+                <label for="remarques">Remarques :</label>
+                <textarea id="remarques" name="remarques" rows="4" placeholder="Vos remarques ou précisions..."></textarea>
+            </div>
+
+            <button type="submit">Valider l'inscription</button>
+        </form>
+    </section>
+</main>
+    
